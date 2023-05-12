@@ -8,8 +8,16 @@ from CharLex import tokens
 
 
 #precedence = (
-#    ('corchete','corcheteF','llave','llaveF','key','dospuntos','value','comma')
+#    ('corchete','corcheteF','llave','llaveF','key','value','comma')
 #)
+
+precedence = (
+#    ('left', 'dospuntos'),
+    ('left', 'llave', 'llaveF', 'corchete', 'corcheteF'),
+    ('left', 'key', 'dospuntos','value'),
+    ('left', 'comma')
+
+)
 
 '''
 S -> A
@@ -61,26 +69,36 @@ def p_objectObject(p):
     print(p[0])
 
 def p_data(p):
+    #'C : key value'
+    #p[0] = p[1] + p[2]
     'C : key dospuntos value'
     p[0] = p[1] + p[2] + p[3]
     print(p[0])
 
 def p_dataObject(p):
+    #'C : key B'
+    #p[0] = p[1] + p[2]
     'C : key dospuntos B'
     p[0] = p[1] + p[2] + p[3]
     print(p[0])
 
 def p_dataData(p):
+    #'C : key value comma C'
+    #p[0] = p[1] + p[2] + p[3] + p[4] 
     'C : key dospuntos value comma C'
     p[0] = p[1] + p[2] + p[3] + p[4] + p[5]
     print(p[0])
 
 def p_dataArray(p):
+    #'C : key A'
+    #p[0] = p[1] + p[2]
     'C : key dospuntos A'
     p[0] = p[1] + p[2] + p[3]
     print(p[0])
 
 def p_dataArrayData(p):
+    #'C : key A comma C'
+    #p[0] = p[1] + p[2] + p[3] + p[4] 
     'C : key dospuntos A comma C'
     p[0] = p[1] + p[2] + p[3] + p[4] + p[5]
     print(p[0])
