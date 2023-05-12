@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "nombre": "Taco de asada",
+        "precio": 20.0,
+        "descripcion": "Tortilla de maíz recién hecha, carne asada, cebolla y cilantro."
+    },
+    {
+        "id": 2,
+        "nombre": "Taco de pastor",
+        "precio": 18.0,
+        "descripcion": "Tortilla de maíz recién hecha, carne de cerdo al pastor, cebolla y piña."
+    },
+    {
+        "id": 3,
+        "nombre": "Taco de lengua",
+        "precio": 25.0,
+        "descripcion": "Tortilla de maíz recién hecha, lengua de res, cebolla y cilantro."
+    },
+    {
+        "id": 4,
+        "nombre": "Taco de suadero",
+        "precio": 22.0,
+        "descripcion": "Tortilla de maíz recién hecha, suadero de res, cebolla y cilantro."
+    },
+    {
+        "id": 5,
+        "nombre": "Taco de chicharrón",
+        "precio": 18.0,
+        "descripcion": "Tortilla de maíz recién hecha, chicharrón prensado, salsa verde y cebolla."
+    },
+    {
+        "id": 6,
+        "nombre": "Taco de barbacoa",
+        "precio": 30.0,
+        "descripcion": "Tortilla de maíz recién hecha, barbacoa de res, cebolla y cilantro."
+    },
+    {
+        "id": 7,
+        "nombre": "Taco de carnitas",
+        "precio": 24.0,
+        "descripcion": "Tortilla de maíz recién hecha, carnitas de cerdo, cebolla y cilantro."
+    },
+    {
+        "id": 8,
+        "nombre": "Taco de camarón",
+        "precio": 35.0,
+        "descripcion": "Tortilla de maíz recién hecha, camarones a la parrilla, aguacate y salsa especial."
+    },
+    {
+        "id": 9,
+        "nombre": "Taco de arrachera",
+        "precio": 28.0,
+        "descripcion": "Tortilla de maíz recién hecha, arrachera, cebolla y cilantro."
+    },
+    {
+        "id": 10,
+        "nombre": "Taco de pollo",
+        "precio": 18.0,
+        "descripcion": "Tortilla de maíz recién hecha, pollo deshebrado, cebolla y cilantro."
+    },
+    {
+        "id": 11,
+        "nombre": "Taco de pescado",
+        "precio": 30.0,
+        "descripcion": "Tortilla de maíz recién hecha, filete de pescado empanizado, ensalada de col y salsa especial."
+    },
+    {
+        "id": 12,
+        "nombre": "Taco de camarón y pulpo",
+        "precio": 40.0,
+        "descripcion": "Tortilla de maíz recién hecha, camaron empanizado, pulpo asado y queso derretido"
+    },
+    {
+        "id": 13,
+        "nombre": "Taco de nopal",
+        "precio": 15.0,
+        "descripcion": "Tortilla de maíz recién hecha, nopal asado, queso fresco y salsa roja."
+    },
+    {
+        "id": 14,
+        "nombre": "Taco de chile relleno",
+        "precio": 20.0,
+        "descripcion": "Tortilla de maíz recién hecha, chile relleno de queso, salsa de tomate y crema."
+    },
+    {
+        "id": 15,
+        "nombre": "Taco de bistec",
+        "precio": 22.0,
+        "descripcion": "Tortilla de maíz recién hecha, bistec a la plancha, cebolla y cilantro."
+    },
+    {
+        "id": 16,
+        "nombre": "Taco de cecina",
+        "precio": 26.0,
+        "descripcion": "Tortilla de maíz recién hecha, cecina de res, cebolla y cilantro."
+    },
+    {
+        "id": 17,
+        "nombre": "Taco de chorizo",
+        "precio": 18.0,
+        "descripcion": "Tortilla de maíz recién hecha, chorizo casero, cebolla y cilantro."
+    },
+    {
+        "id": 18,
+        "nombre": "Taco de huitlacoche",
+        "precio": 25.0,
+        "descripcion": "Tortilla de maíz recién hecha, huitlacoche salteado, queso fresco y cilantro."
+    },
+    {
+        "id": 19,
+        "nombre": "Taco de aguacate",
+        "precio": 16.0,
+        "descripcion": "Tortilla de maíz recién hecha, aguacate, queso fresco y salsa verde."
+    },
+    {
+        "id": 20,
+        "nombre": "Taco de chistorra",
+        "precio": 22.0,
+        "descripcion": "Tortilla de maíz recién hecha, chistorra, cebolla y cilantro."
+    },
+    {
+        "id": 21,
+        "nombre": "Taco de machito",
+        "precio": 26.0,
+        "descripcion": "Tortilla de maíz recién hecha, machito de cabrito, cebolla y cilantro."
+    },
+    {
+        "id": 22,
+        "nombre": "Taco de birria",
+        "precio": 28.0,
+        "descripcion": "Tortilla de maíz recién hecha, birria de res, cebolla y cilantro."
+    },
+    {
+        "id": 23,
+        "nombre": "Taco de tripa",
+        "precio": 22.0,
+        "descripcion": "Tortilla de maíz recién hecha, tripa de res, cebolla y cilantro."
+    },
+    {
+        "id": 24,
+        "nombre": "Taco de cochinita pibil",
+        "precio": 30.0,
+        "descripcion": "Tortilla de maíz recién hecha, cochinita pibil, cebolla y cilantro."
+    }
+]
