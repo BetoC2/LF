@@ -38,11 +38,14 @@ def p_arrayObject(p):
     'A : llave B llaveF'
     p[0] = p[1] + p[2] + p[3]
     print(p[0])
+    values.append(p[2])
 
 def p_arrayObjectObject(p):
     'A : llave B llaveF comma A'
     p[0] = p[1] + p[2] + p[3] + p[4] + p[5]
     print(p[0])
+    values.append(p[2])
+
 
 def p_objectId(p):
     'B : key_id dospuntos value_num comma C'
@@ -71,10 +74,15 @@ def p_error(p):
 
 # Build the parser
 parser = yacc.yacc()
-with open('tacos.json', 'r') as archivo:
+with open('items.json', 'r') as archivo:
         contenido = archivo.read()
 archivo.close()
 
+# Contenedor 
+global values
+values = []
+
+# Validación del json
 while True:
     try:
         s = contenido
@@ -85,3 +93,24 @@ while True:
     print(result)
     break
 
+values2 = []
+# Exportación de json a csv
+if len(values) > 0:
+    archivo = open("tablas.csv", "w")
+    archivo.write("id, displayName, name, stackSize\n")
+
+    while len(values) > 0:
+        value:str = values.pop()
+        pares:list = value.split(',')
+        paresChidos:list = []
+
+        for par in pares:
+            par.replace('"','')
+            palabras:list = par.split(":")
+            paresChidos.append(palabras[1])
+
+        valuesChidos:str = ",".join(paresChidos)
+        valuesChidos = valuesChidos.replace('"','')
+        archivo.write(valuesChidos + '\n')
+
+    archivo.close()

@@ -892,5 +892,17 @@
       "displayName": "Acacia Fence",
       "name": "acacia_fence",
       "stackSize": 64
+    },
+    {
+      "id": 323,
+      "displayName": "Sign",
+      "name": "sign",
+      "stackSize": 16
+    },
+    {
+      "id": 324,
+      "displayName": "Oak Door",
+      "name": "wooden_door",
+      "stackSize": 64
     }
 ]
