@@ -4,10 +4,10 @@ import ply.lex as lex
 S -> corchete A corcheteF
 A -> llave B llaveF
 A -> llave B llaveF comma A
-B -> key_id dospuntos value_num comma B
-B -> key_nombre dospuntos value_string comma B
-B -> key_precio dospuntos value_num comma B
-B -> key_descripcion dospuntos value_string 
+B -> key_id dospuntos value_num comma C
+C -> key_display dospuntos value_string comma D
+D -> key_name dospuntos value_string comma E
+E -> key_stack dospuntos value_num 
 '''
 
 tokens = (
@@ -16,29 +16,45 @@ tokens = (
     'llave',
     'llaveF',
     'key_id',
-    'key_nombre',
-    'key_precio',
-    'key_descripcion',
+    'key_display',
+    'key_name',
+    'key_stack',
     'dospuntos',
     'value_num',
     'value_string',
     'comma'
 )
 
-#def 
+def t_key_id(t):
+    r'"id"'
+    return t
+
+def t_key_display(t):
+    r'"displayName"'
+    return t
+
+def t_key_name(t):
+    r'"name"'
+    return t
+
+def t_key_stack(t):
+    r'"stackSize"'
+    return t
+
+def t_value_num(t):
+    r'[0-9]+'
+    return t
+
+def t_value_string(t):
+    r'"[A-Za-z0-9 _\(\)\']+"'
+    return t
+
 
 t_corchete = r'\['
 t_corcheteF = r'\]'
 t_llave = r'\{'
 t_llaveF = r'\}'
-t_key_id = r'"id"'
-t_key_nombre = r'"nombre"'
-t_key_precio = r'"precio"'
-t_key_descripcion = r'"descripcion"'
 t_dospuntos = r':' 
-t_value_string = r'"Tortila [A-Za-z\.\, 0-9]+"'
-#t_value_nombre = 
-t_value_num = r'[0-9]+\.?[0-9]*'
 t_comma = r'\,' 
 
 t_ignore  = ' \t\n'
@@ -65,4 +81,3 @@ if __name__ == '__main__':
             for tok in lexer:
                 print(tok)
         break
-    

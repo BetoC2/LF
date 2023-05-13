@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "displayName": "Stone",
+    "name": "stone",
+    "stackSize": 64
+  },
+  {
+    "id": 2,
+    "displayName": "Grass Block",
+    "name": "grass",
+    "stackSize": 64
+  },
+  {
+    "id": 3,
+    "displayName": "Dirt",
+    "name": "dirt",
+    "stackSize": 64
+  }
+]
