@@ -4,9 +4,9 @@ import ply.lex as lex
 S -> corchete A corcheteF
 A -> llave B llaveF
 A -> llave B llaveF comma A
-B -> key_id dospuntos value_num comma
-B -> key_nombre dospuntos value_string comma
-B -> key_precio dospuntos value_num comma
+B -> key_id dospuntos value_num comma B
+B -> key_nombre dospuntos value_string comma B
+B -> key_precio dospuntos value_num comma B
 B -> key_descripcion dospuntos value_string 
 '''
 
@@ -25,6 +25,8 @@ tokens = (
     'comma'
 )
 
+#def 
+
 t_corchete = r'\['
 t_corcheteF = r'\]'
 t_llave = r'\{'
@@ -34,7 +36,8 @@ t_key_nombre = r'"nombre"'
 t_key_precio = r'"precio"'
 t_key_descripcion = r'"descripcion"'
 t_dospuntos = r':' 
-t_value_string = r'"[A-Za-z][A-Za-z\.\, 0-9]+"'
+t_value_string = r'"Tortila [A-Za-z\.\, 0-9]+"'
+#t_value_nombre = 
 t_value_num = r'[0-9]+\.?[0-9]*'
 t_comma = r'\,' 
 
